@@ -14,6 +14,11 @@ body {
     text-align: center;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+}
+
+#intro {
+    background-image: url('your-anime-background-intro.jpg');
 }
 
 #section1 {
@@ -24,24 +29,19 @@ body {
     background-image: url('your-anime-background2.jpg');
 }
 
-#section3 {
-    background-image: url('your-anime-background3.jpg');
-}
-
 .title {
     font-size: 3em;
-    margin-bottom: 20px;
     animation: glow 1.5s infinite alternate;
+}
+
+.subtitle {
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
 .content {
     font-size: 1.5em;
     margin: 10px;
-}
-
-.contact-title {
-    font-size: 2em;
-    margin-bottom: 20px;
 }
 
 .contact a {
