@@ -15,22 +15,24 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
 #intro {
     background-image: url('your-anime-background-intro.jpg');
 }
 
-#section1 {
+#hobbies {
     background-image: url('your-anime-background1.jpg');
 }
 
-#section2 {
+#contact {
     background-image: url('your-anime-background2.jpg');
 }
 
 .title {
-    font-size: 3em;
+    font-size: 4em;
     animation: glow 1.5s infinite alternate;
 }
 
