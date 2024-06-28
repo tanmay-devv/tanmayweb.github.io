@@ -17,9 +17,10 @@ $(document).ready(function() {
     backgroundMusic.play();
 
     // Scroll animations
-    $(window).scroll(function() {
+    $(window).on('scroll', function() {
         $('.section').each(function() {
             if ($(this).offset().top < $(window).scrollTop() + $(window).height() / 1.5) {
+                $(this).css('opacity', '1');
                 $(this).find('.animate__animated').addClass('animate__fadeIn');
             }
         });
