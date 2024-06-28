@@ -1,23 +1,22 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const nameElement = document.getElementById('name');
-    const nameContentElement = document.getElementById('name-content');
-    const interestsElement = document.getElementById('interests');
-    const hobbiesElement = document.getElementById('hobbies');
-    const emailLink = document.getElementById('email-link');
-    const phoneLink = document.getElementById('phone-link');
+$(document).ready(function() {
+    const name = '[Your Name]';
+    const interests = '[Your Interests]';
+    const hobbies = '[Your Hobbies/Activities]';
+    const email = 'your-email@example.com';
+    const phone = '+1234567890';
 
-    const userName = '[Your Name]';
-    const userInterests = '[Your Interests]';
-    const userHobbies = '[Your Hobbies/Activities]';
-    const userEmail = 'your-email@example.com';
-    const userPhone = '+1234567890';
+    $('#name').text(name);
+    $('#name-content').text(name);
+    $('#interests').text(interests);
+    $('#hobbies').text(hobbies);
+    $('#email-link').text(email).attr('href', `mailto:${email}`);
+    $('#phone-link').text(phone).attr('href', `tel:${phone}`);
 
-    nameElement.textContent = userName;
-    nameContentElement.textContent = userName;
-    interestsElement.textContent = userInterests;
-    hobbiesElement.textContent = userHobbies;
-    emailLink.textContent = userEmail;
-    emailLink.href = `mailto:${userEmail}`;
-    phoneLink.textContent = userPhone;
-    phoneLink.href = `tel:${userPhone}`;
+    $(window).scroll(function() {
+        $('.section').each(function() {
+            if ($(this).offset().top < $(window).scrollTop() + $(window).height() / 1.5) {
+                $(this).find('.animate__animated').addClass('animate__fadeIn');
+            }
+        });
+    });
 });
