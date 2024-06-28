@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    const name = '[Your Name]';
+    const name = 'Tanmay';
     const interests = '[Your Interests]';
     const hobbies = '[Your Hobbies/Activities]';
     const email = 'your-email@example.com';
@@ -12,6 +12,11 @@ $(document).ready(function() {
     $('#email-link').text(email).attr('href', `mailto:${email}`);
     $('#phone-link').text(phone).attr('href', `tel:${phone}`);
 
+    // Play background music
+    const backgroundMusic = document.getElementById('background-music');
+    backgroundMusic.play();
+
+    // Scroll animations
     $(window).scroll(function() {
         $('.section').each(function() {
             if ($(this).offset().top < $(window).scrollTop() + $(window).height() / 1.5) {
