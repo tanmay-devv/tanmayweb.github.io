@@ -3,24 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Flashy Personal Webpage</title>
+    <title>Tanmay's Flashy Webpage</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
+    <audio id="background-music" loop>
+        <source src="background-music.mp3" type="audio/mp3">
+    </audio>
+    <div class="section" id="intro">
+        <h1 class="title animate__animated animate__fadeIn">Hey, I am Tanmay</h1>
+    </div>
     <div class="section" id="section1">
-        <h1 class="title animate__animated animate__fadeIn">Welcome to <span id="name">[Your Name]</span>'s World</h1>
+        <h2 class="subtitle animate__animated animate__fadeInLeft">About Me</h2>
+        <p class="content animate__animated animate__fadeInLeft">Hi! I'm Tanmay, and I love [Your Interests].</p>
+        <p class="content animate__animated animate__fadeInLeft">In my free time, I enjoy [Your Hobbies/Activities].</p>
     </div>
     <div class="section" id="section2">
-        <p class="content animate__animated animate__fadeInUp">Hi! I'm <span id="name-content">[Your Name]</span>, and I love <span id="interests">[Your Interests]</span>.</p>
-        <p class="content animate__animated animate__fadeInUp">In my free time, I enjoy <span id="hobbies">[Your Hobbies/Activities]</span>.</p>
-    </div>
-    <div class="section" id="section3">
-        <h2 class="contact-title animate__animated animate__fadeIn">Contact Me</h2>
-        <p class="contact animate__animated animate__fadeIn"><a id="email-link" href="mailto:your-email@example.com">your-email@example.com</a></p>
-        <p class="contact animate__animated animate__fadeIn"><a id="phone-link" href="tel:+1234567890">+1234567890</a></p>
+        <h2 class="subtitle animate__animated animate__fadeInRight">Contact Me</h2>
+        <p class="contact animate__animated animate__fadeInRight">Email: <a id="email-link" href="mailto:your-email@example.com">your-email@example.com</a></p>
+        <p class="contact animate__animated animate__fadeInRight">Phone: <a id="phone-link" href="tel:+1234567890">+1234567890</a></p>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="scripts.js"></script>
 </body>
 </html>
+
